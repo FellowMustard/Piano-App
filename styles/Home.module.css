@@ -33,6 +33,9 @@
   gap: 1px;
 }
 .pianoWhite {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   width: 40px;
   height: 140px;
   background-color: #e7dee0;
@@ -41,12 +44,11 @@
   position: relative;
   transition: all 0.3s ease;
 }
-.pianoWhite:active {
+.piano:active .pianoWhite:hover {
   transform: translateY(10px);
   border-bottom: 20px solid #d3cecf;
 }
 .pianoBlack {
-  transition: all 0.3s ease;
   width: 20px;
   height: 80px;
   margin-left: -10px;
@@ -57,9 +59,18 @@
   position: relative;
   z-index: 30;
   transform: translateY(-8px);
-  transition: all 0.3s ease;
+  transition: all 0.15s ease;
 }
-.pianoBlack:active {
+.piano:active .pianoBlack:hover {
   transform: translateY(-4px);
   border-bottom: 4px solid #090607;
+}
+.pianoKeysName {
+  color: #2b1d23;
+  font-size: 25px;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
